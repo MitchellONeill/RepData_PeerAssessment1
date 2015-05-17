@@ -1,7 +1,7 @@
 ---
 title: 'Reproducible Research - Assignment #1'
 author: "Mitchell O'Neill"
-date: "May 11th, 2015"
+date: "May, 2015"
 output: html_document
 ---
 
@@ -10,22 +10,6 @@ output: html_document
 library(knitr)
 opts_chunk$set(echo = TRUE, results ="show")
 library(dplyr)
-```
-
-```
-## 
-## Attaching package: 'dplyr'
-## 
-## The following object is masked from 'package:stats':
-## 
-##     filter
-## 
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```r
 library(ggplot2)
 library(lubridate)
 library(stringr)
@@ -39,14 +23,6 @@ setInternet2(use=TRUE)
 temp <- tempfile()
 fileUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
 download.file(fileUrl, temp)
-```
-
-```
-## Warning in download.file(fileUrl, temp): downloaded length 53559 !=
-## reported length 53559
-```
-
-```r
 ActivityData <- read.csv(unz(temp, "activity.csv"))
 unlink(temp)
 ```

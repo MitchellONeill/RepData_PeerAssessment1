@@ -204,21 +204,7 @@ hr {
 <pre><code class="r">library(knitr)
 opts_chunk$set(echo = TRUE, results =&quot;show&quot;)
 library(dplyr)
-</code></pre>
-
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;
-## 
-## The following object is masked from &#39;package:stats&#39;:
-## 
-##     filter
-## 
-## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union
-</code></pre>
-
-<pre><code class="r">library(ggplot2)
+library(ggplot2)
 library(lubridate)
 library(stringr)
 </code></pre>
@@ -229,13 +215,7 @@ library(stringr)
 temp &lt;- tempfile()
 fileUrl &lt;- &quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;
 download.file(fileUrl, temp)
-</code></pre>
-
-<pre><code>## Warning in download.file(fileUrl, temp): downloaded length 53559 !=
-## reported length 53559
-</code></pre>
-
-<pre><code class="r">ActivityData &lt;- read.csv(unz(temp, &quot;activity.csv&quot;))
+ActivityData &lt;- read.csv(unz(temp, &quot;activity.csv&quot;))
 unlink(temp)
 </code></pre>
 

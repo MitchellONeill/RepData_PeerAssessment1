@@ -1,7 +1,7 @@
 ---
 title: 'Reproducible Research - Assignment #1'
 author: "Mitchell O'Neill"
-date: "May 11th, 2015"
+date: "May, 2015"
 output: html_document
 ---
 
